@@ -5,7 +5,7 @@ from urllib.parse import urljoin
 import pymysql
 
 # Connect to DB (same config as app.py)
-conn = pymysql.connect(host='localhost', user='root', password='', database='pentest_framework')
+conn = pymysql.connect(host='localhost', user='admin', password='AdminPassword' , database='pentest_framework')
 cursor = conn.cursor()
 
 # SQLi and XSS payloads
